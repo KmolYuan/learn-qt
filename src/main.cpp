@@ -1,12 +1,9 @@
 #include <QApplication>
-#include <QWidget>
+#include "main_window.h"
 
-int main(int argc, char *argv[])
-{
+int main(int argc, char **argv) {
     QApplication app(argc, argv);
-    QWidget w;
-    w.setWindowTitle("Hello world!");
-    w.setFixedSize(800, 600);
+    MainWindow w;
     w.show();
     return QApplication::exec();
 }
